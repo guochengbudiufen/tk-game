@@ -115,9 +115,9 @@ export default async function handler(req, res) {
 角色当前生理状态：${getPhysioDesc(intensity)}
 角色当前心理状态：${getPsychoDesc(intensity)}`;
   } else {
-    stateInjection = '
+     stateInjection = ``
 【当前TK状态】
-当前TK模式：未开启。角色处于常规对话状态。';
+当前TK模式：未开启。角色处于常规对话状态。;`
   }
 
   // Build messages array
